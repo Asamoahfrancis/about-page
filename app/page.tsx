@@ -1,113 +1,174 @@
-import Image from 'next/image'
-
+"use client";
+import Link from "next/link";
+import { ImLinkedin } from "react-icons/im";
+import { BsTwitterX } from "react-icons/bs";
+import { IoLogoFacebook } from "react-icons/io";
+import { TfiYoutube } from "react-icons/tfi";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <div className="bg-gray-100">
+      <nav className="text-black sticky top-0  bg-white  p-4 py-8">
+        <div className="container mx-auto flex justify-between items-center">
+          <a href="#" className="text-lg font-semibold">
+            Policy<span className="text-red-600">CON</span>
           </a>
+          <div>
+            <a
+              href="#"
+              className="px-3 py-2 hover:bg-red-600 hover:text-white rounded"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="px-3 py-2 hover:bg-red-600 hover:text-white  rounded"
+            >
+              About Us
+            </a>
+            <a
+              href="#"
+              className="px-3 py-2 hover:bg-red-600 hover:text-white  rounded"
+            >
+              Community
+            </a>
+            <a
+              href="#"
+              className="px-3 py-2 hover:bg-red-600  hover:text-white  rounded"
+            >
+              Join Us
+            </a>
+            <a
+              href="#"
+              className="px-3 py-2 hover:bg-red-600 hover:text-white  rounded"
+            >
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
+      </nav>
+      <header className="bg-red-600 h-[300px] text-white text-center py-10 px-5 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold mb-2">
+          Empowering Policy Conversations - About PolicyCON
+        </h1>
+        <p className="text-xl">Where Every Voice Shapes the Future</p>
+      </header>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      <main className="container mx-auto p-8 grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <section className="mb-12 border rounded p-4 shadow-md hover:shadow-none">
+          <h2 className="text-3xl  font-bold text-red-600 mb-4 text-center">
+            Our Mission
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          <p className="text-gray-700  text-center">
+            At PolicyCON, we are commiKed to shaping the future of public
+            policy. Our plaWorm is a beacon for dynamic discussions, bringing
+            together diverse perspectives from around the globe. We believe in
+            empowering voices, from seasoned analysts to enthusiastic newcomers,
+            to contribute to meaningful policy changes.
           </p>
-        </a>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <section className="mb-12 border rounded p-4 shadow-md hover:shadow-none">
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">
+            Our Journey
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-gray-700  text-center">
+            Founded in 2018, PolicyCON has rapidly evolved from a small forum to
+            a thriving community. Our journey began with a simple idea: to make
+            policy discussions more accessible and inclusive. Today, we are
+            proud to be a leading plaWorm where experts and enthusiasts alike
+            can share insights, challenge norms, and drive innovaton in
+            policymaking.
           </p>
-        </a>
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <section className="mb-12 border shadow-md p-2 hover:shadow-none">
+          <h2 className="text-3xl  font-bold text-red-600 mb-4 text-center">
+            Our Community
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          <p className="text-gray-700 text-center p-2">
+            The heart of PolicyCON is our vibrant community. We foster an
+            environment where open dialogue is encouraged, and diverse opinions
+            are celebrated. Our members range from policy professionals and
+            academics to students and actvists, all united by a shared passion
+            for shaping a beKer world.
           </p>
-        </a>
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <section className="mb-12 border shadow-md hover:shadow-none">
+          <h2 className="text-3xl font-bold text-red-600 mb-4  p-2 text-center">
+            Our Impact
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p className="text-gray-700 text-center p-2 ">
+            Through our plaWorm, we've facilitated critcal conversations on
+            global issues, influenced policy decisions, and provided a stage for
+            underrepresented voices. Our impact extends beyond discussions, as
+            we actively engage in policy research, host webinars, and
+            collaborate with organizations for broader societal change.
           </p>
-        </a>
-      </div>
-    </main>
-  )
+        </section>
+
+        <section className="mb-12 border shadow-md p-2 hover:shadow-none">
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">
+            Our Vision
+          </h2>
+          <p className="text-gray-700 text-center p-2">
+            Looking ahead, PolicyCON aims to further democratize policy
+            discussion. We envision a world where policymaking is a
+            collaborative effort, accessible to all, and reflective of diverse
+            viewpoints. Our commitment to innovation and inclusivity drives us
+            to continuously enhance our plaWorm, ensuring that every voice can
+            be heard, and every idea can make a difference.
+          </p>
+        </section>
+
+        <section className="mb-12 border shadow-md p-2 hover:shadow-none">
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">
+            Join Us
+          </h2>
+          <p className="text-gray-700 text-center">
+            Become a part of PolicyCON's journey. Whether you're looking to
+            contribute your expertise, learn about policy, or simply engage in
+            meaningful conversations, our doors are open. Join us today and be a
+            part of shaping the policies of tomorrow.
+          </p>
+        </section>
+      </main>
+      <footer className="bg-red-600 text-white text-center p-4">
+        <div className="grid place-items-center mb-8  ">
+          <section className="flex items-center gap-6">
+            <Link
+              href="www.policycon.com"
+              className="cursor-pointer"
+              target="blank"
+            >
+              <FaExternalLinkAlt size="1.5em" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/policycon/"
+              target="blank"
+            >
+              <ImLinkedin size="1.5em" />
+            </Link>
+            <Link href="https://twitter.com/policycon" target="blank">
+              <BsTwitterX size="1.5em" />
+            </Link>
+            <Link href="https://web.facebook.com/policycon" target="blank">
+              <IoLogoFacebook size="1.5em" />
+            </Link>
+            <Link href="https://www.youtube.com/policycon" target="blank">
+              <TfiYoutube size="1.5em" />
+            </Link>
+            <Link href="https://www.instagram.com/policycon" target="blank">
+              <AiFillInstagram size="1.5em" />
+            </Link>
+          </section>
+        </div>
+        <p>&copy; 2023 PolicyCON. All rights reserved.</p>
+      </footer>
+    </div>
+  );
 }
