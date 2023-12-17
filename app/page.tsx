@@ -6,9 +6,7 @@ import { IoLogoFacebook } from "react-icons/io";
 import { TfiYoutube } from "react-icons/tfi";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { useRouter } from "next/navigation";
 export default function Home() {
-  const router = useRouter();
   return (
     <div className="bg-gray-100">
       <nav className="text-black sticky top-0  bg-white  p-4 py-8">
@@ -103,7 +101,7 @@ export default function Home() {
             Our Impact
           </h2>
           <p className="text-gray-700 text-center p-2 ">
-            Through our plaWorm, we've facilitated critcal conversations on
+            Through our plaWorm, we&apos;ve facilitated critcal conversations on
             global issues, influenced policy decisions, and provided a stage for
             underrepresented voices. Our impact extends beyond discussions, as
             we actively engage in policy research, host webinars, and
@@ -130,10 +128,10 @@ export default function Home() {
             Join Us
           </h2>
           <p className="text-gray-700 text-center">
-            Become a part of PolicyCON's journey. Whether you're looking to
-            contribute your expertise, learn about policy, or simply engage in
-            meaningful conversations, our doors are open. Join us today and be a
-            part of shaping the policies of tomorrow.
+            Become a part of PolicyCON&apos;s journey. Whether you&apos;re
+            looking to contribute your expertise, learn about policy, or simply
+            engage in meaningful conversations, our doors are open. Join us
+            today and be a part of shaping the policies of tomorrow.
           </p>
         </section>
       </main>
