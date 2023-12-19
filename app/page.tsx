@@ -6,57 +6,71 @@ import { IoLogoFacebook } from "react-icons/io";
 import { TfiYoutube } from "react-icons/tfi";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { BiMenu } from "react-icons/bi";
 export default function Home() {
   return (
     <div className="bg-gray-100">
-      <nav className="text-black sticky top-0  bg-white  p-4 py-8">
-        <div className="container mx-auto flex justify-between items-center">
-          <a href="#" className="text-lg font-semibold">
+      <div className="md:hidden shadow-sm bg-white sticky top-0">
+        <section className="flex py-4  items-center justify-between px-2">
+          <Link href="#" className="text-2xl  text-black font-bold">
             Policy<span className="text-red-600">CON</span>
-          </a>
+          </Link>
+          <div className="text-red-600 cursor-pointer">
+            <BiMenu size="3em" />
+          </div>
+        </section>
+      </div>
+      <nav className="hidden md:block text-black sticky top-0  bg-white  p-4 py-8">
+        <div className="container mx-auto flex justify-between items-center">
+          <Link href="#" className="text-2xl font-bold">
+            Policy<span className="text-red-600">CON</span>
+          </Link>
           <div>
-            <a
+            <Link
               href="#"
               className="px-3 py-2 hover:bg-red-600 hover:text-white rounded"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="px-3 py-2 hover:bg-red-600 hover:text-white  rounded"
             >
               About Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="px-3 py-2 hover:bg-red-600 hover:text-white  rounded"
             >
               Community
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="px-3 py-2 hover:bg-red-600  hover:text-white  rounded"
             >
               Join Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="px-3 py-2 hover:bg-red-600 hover:text-white  rounded"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
-      <header className="bg-red-600 h-[300px] text-white text-center py-10 px-5 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold mb-2">
-          Empowering Policy Conversations - About PolicyCON
+      <header className="bg-gradient-to-r from-purple-500 to-pink-500 h-[300px] text-white text-center py-10 px-5 flex flex-col items-center justify-center">
+        <h1 className="md:text-4xl text-3xl font-bold mb-2">
+          Empowering Policy Conversations
         </h1>
-        <p className="text-xl">Where Every Voice Shapes the Future</p>
+        <p className="md:text-xl ">Where Every Voice Shapes the Future</p>
       </header>
-
-      <main className="container mx-auto p-8 grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <section className="mb-12 border rounded p-4 shadow-md hover:shadow-none">
+      <h1 className="text-center font-bold text-red-600  py-10 text-2xl md:text-4xl">
+        <span className="px-4">About</span>{" "}
+        <span className="text-black">Policy</span>CON
+      </h1>
+      <main className="container mx-auto md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <section className="mb-12 rounded-lg border  p-4 shadow-md hover:shadow-none">
           <h2 className="text-3xl  font-bold text-red-600 mb-4 text-center">
             Our Mission
           </h2>
@@ -69,7 +83,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mb-12 border rounded p-4 shadow-md hover:shadow-none">
+        <section className="mb-12 rounded-lg border  p-4 shadow-md hover:shadow-none">
           <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">
             Our Journey
           </h2>
@@ -83,7 +97,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mb-12 border shadow-md p-2 hover:shadow-none">
+        <section className="mb-12 border rounded-lg shadow-md p-2 hover:shadow-none">
           <h2 className="text-3xl  font-bold text-red-600 mb-4 text-center">
             Our Community
           </h2>
@@ -96,7 +110,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mb-12 border shadow-md hover:shadow-none">
+        <section className="mb-12 border rounded-lg shadow-md hover:shadow-none">
           <h2 className="text-3xl font-bold text-red-600 mb-4  p-2 text-center">
             Our Impact
           </h2>
@@ -109,7 +123,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mb-12 border shadow-md p-2 hover:shadow-none">
+        <section className="mb-12 border rounded-lg shadow-md p-2 hover:shadow-none">
           <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">
             Our Vision
           </h2>
@@ -123,7 +137,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mb-12 border shadow-md p-2 hover:shadow-none">
+        <section className="mb-12 border rounded-lg shadow-md p-2 hover:shadow-none">
           <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">
             Join Us
           </h2>
@@ -139,7 +153,7 @@ export default function Home() {
         <div className="grid place-items-center mb-8  ">
           <section className="flex items-center gap-6">
             <Link
-              href="www.policycon.com"
+              href="https://policycon.com"
               className="cursor-pointer"
               target="blank"
             >
